@@ -23,6 +23,8 @@ prototype.initializing = function() {
     this.options
   );
 
+  this.pkg.keywords = this.pkg.keywords || this.options.keywords;
+
   if (this.options.name) {
     const name = this.options.name;
     const packageNameValidity = validatePackageName(name);
